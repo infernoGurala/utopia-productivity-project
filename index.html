@@ -3,16 +3,70 @@
 <head>
   <title>Inferalis</title>
   <meta charset="utf-8">
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 80px;
+      background: #111;
+      color: white;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 20px;
+      background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+      transition: all 1.5s ease;
+      font-weight: bold;
+      letter-spacing: 0.05rem;
+      padding: 0;
+      cursor: pointer;
+      margin: 15px;
+    }
+
+    .btn span {
+      display: inline-block;
+      padding: 15px 35px;
+      font-size: 17px;
+      border-radius: 20px;
+      background: #ffffff10;
+      backdrop-filter: blur(20px);
+      transition: 0.4s ease-in-out;
+      color: white;
+    }
+
+    .btn:hover span {
+      backdrop-filter: blur(0px);
+      color: #ffffff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
 </head>
-<body style="font-family:Arial; text-align:center; margin-top:80px;">
+
+<body>
 
   <h1>Infernum</h1>
   <p>owned by inferno</p>
   <p>Redirect to</p>
-  
-  <a href="https://blog.inferalis.space">Blog</a>
-  <br><br>
-  <a href="https://utopia.inferalis.space">Utopia</a>
+
+  <button class="btn">
+    <a href="https://blog.inferalis.space">
+      <span>Blog</span>
+    </a>
+  </button>
+
+  <br>
+
+  <button class="btn">
+    <a href="https://utopia.inferalis.space">
+      <span>Utopia</span>
+    </a>
+  </button>
 
 </body>
 </html>
