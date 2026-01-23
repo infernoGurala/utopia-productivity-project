@@ -1,205 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>U T O P I A</title>
 
+	<!-- Favicon -->
 	<link rel="icon" type="image/png" sizes="32x32" href="Homeicon.png">
 
-	<style>
-	html {
-		-webkit-print-color-adjust: exact;
-	}
+	<!-- Notion-like font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-	* {
-		box-sizing: border-box;
-		-webkit-print-color-adjust: exact;
-		word-break: normal;
-		overflow-wrap: break-word;
-		-webkit-tap-highlight-color: transparent;
-		user-select: none;
-	}
-
-	html, body {
-		margin: 0;
-		padding: 0;
-		background-color: #181919;
-		color: #ebebe9;
-		overflow-x: hidden;
-	}
-
-	body {
-		line-height: 1.5;
-		white-space: normal;
-		margin: 2em auto;
-		max-width: 900px;
-	}
-
-	a,
-	a:visited,
-	a:hover,
-	a:active,
-	a:focus {
-		color: inherit;
-		text-decoration: none;
-		outline: none;
-	}
-
-	h1, h2, h3 {
-		letter-spacing: -0.01em;
-		line-height: 1.2;
-		font-weight: 600;
-		margin-bottom: 0;
-	}
-
-	.page-title {
-		font-size: 2.5rem;
-		font-weight: 700;
-		margin: 0 0 0.75em;
-	}
-
-	.page-description {
-		margin-bottom: 2em;
-		color: #a39f98;
-	}
-
-	.page-title-wrap {
-		display: flex;
-		align-items: baseline;
-		gap: 0.75rem;
-	}
-
-	.page-title-icon {
-		width: 28px;
-		height: 28px;
-		object-fit: contain;
-		position: relative;
-		top: 2px;
-	}
-
-	table {
-		width: 100%;
-		border-collapse: collapse;
-		border-left: none;
-		border-right: none;
-	}
-
-	th, td {
-		border: 0.1px solid #383734;
-		padding: 0.25em 0.5em;
-		line-height: 1.5;
-		text-align: left;
-	}
-
-	th {
-		color: #a39f98;
-	}
-
-	.collection-content {
-		font-size: 0.875rem;
-	}
-
-	.collection-content td.cell-title {
-		white-space: nowrap;
-		padding-right: 1em;
-		transition: color 0.2s ease;
-	}
-
-	.collection-content td.cell-title:hover,
-	.collection-content td.cell-title:hover a {
-		color: #a39f98;
-	}
-
-	.icon {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		max-width: 1.2em;
-		max-height: 1.2em;
-		margin-right: 0.5em;
-	}
-
-	img {
-		max-width: 100%;
-	}
-
-	@media (max-width: 600px) {
-		body {
-			margin: 1em;
-		}
-
-		.page-title {
-			font-size: 1.6rem;
-		}
-
-		.page-title-icon {
-			width: 24px;
-			height: 24px;
-			top: 1px;
-		}
-
-		table {
-			display: block;
-			overflow-x: auto;
-		}
-	}
-	</style>
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <article class="page sans">
 
-	<header>
+	<header class="page-header">
 		<div class="page-title-wrap">
 			<img src="Homeicon.png" class="page-title-icon" alt="Home">
 			<h1 class="page-title">U T O P I A</h1>
 		</div>
 
-		<p class="page-description">“Stay productive. Everything in one place.”</p>
+		<p class="page-description">
+			“Stay productive. Everything in one place.”
+		</p>
 	</header>
 
 	<div class="page-body">
 
-	<table class="collection-content">
-		<thead>
-			<tr>
-				<th>
-					<span class="icon">
-						<img src="https://www.notion.so/icons/arrow-southeast_gray.svg" style="width:14px;height:14px;display:block">
-					</span>
-					COURSE
-				</th>
-			</tr>
-		</thead>
+		<table class="collection-content">
+			<thead>
+				<tr>
+					<th>
+						<span class="icon">
+							<img src="https://www.notion.so/icons/arrow-southeast_gray.svg" alt="">
+						</span>
+						COURSE
+					</th>
+				</tr>
+			</thead>
 
-		<tbody>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/Tracking%202df132092bdf801896edfba33a1f25c1.html"><img class="icon" src="https://www.notion.so/icons/stopwatch_red.svg">Tracking</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/Thermodynamics%202e2132092bdf80bc96a2e0ecad1640a3.html"><img class="icon" src="https://www.notion.so/icons/fire_green.svg">Thermodynamics</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/DEVC%202df132092bdf80dd82a2f5b3e47da46a.html"><img class="icon" src="https://www.notion.so/icons/mathematics_green.svg">DEVC</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/Chemistry%202df132092bdf80f9af9af689e774cbf4.html"><img class="icon" src="https://www.notion.so/icons/science_green.svg">Chemistry</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/BEEE%202e2132092bdf80feac6fc0f7af4c1db5.html"><img class="icon" src="https://www.notion.so/icons/electric-plug_green.svg">BEEE</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/C%20LAB%202e2132092bdf80318b65f18ede202f37.html"><img class="icon" src="https://www.notion.so/icons/code_green.svg">C LAB</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/Economics%202e2132092bdf80789886c5c1c085bef7.html"><img class="icon" src="https://www.notion.so/icons/cash_green.svg">Economics</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/IOT%202e2132092bdf80648819fd169675f7ff.html"><img class="icon" src="https://www.notion.so/icons/globe_green.svg">IOT</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/Design%20thinking%202e2132092bdf808599ebf5540cf323dc.html"><img class="icon" src="https://www.notion.so/icons/robot_green.svg">Design thinking</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/Employability%20skills%202e2132092bdf80a1a452c244564d434a.html"><img class="icon" src="https://www.notion.so/icons/archery_green.svg">Employability skills</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/Environmental%20science%202e2132092bdf80c79fd8f5f042d8e468.html"><img class="icon" src="https://www.notion.so/icons/volcano_green.svg">Environmental science</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/ACSE%202e2132092bdf8097a7a6e9f80d98b307.html"><img class="icon" src="https://www.notion.so/icons/megaphone_green.svg">ACSE</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/Labs%202e3132092bdf80618e7ec00cffd081d7.html"><img class="icon" src="https://www.notion.so/icons/server_yellow.svg">Labs</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/Infernius%20Aurex%202d4132092bdf80a3ab15f70f04b7db17.html">Infernius Aurex</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/Archive%202dd132092bdf80c0b713df0e98a59025.html"><img class="icon" src="https://www.notion.so/icons/archive_purple.svg">Archive</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/University%20Docs%202df132092bdf80c0929cc850e237f42d.html"><img class="icon" src="https://www.notion.so/icons/calendar-month_blue.svg">University Docs</a></td></tr>
-			<tr><td class="cell-title"><a href="U%20T%20O%20P%20I%20A/Other%202e2132092bdf801689ecf8ee3ba6062b.html"><img class="icon" src="https://www.notion.so/icons/add_lightgray.svg">Other</a></td></tr>
-		</tbody>
-	</table>
+			<tbody>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/stopwatch_red.svg">Tracking</a></td></tr>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/fire_green.svg">Thermodynamics</a></td></tr>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/mathematics_green.svg">DEVC</a></td></tr>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/science_green.svg">Chemistry</a></td></tr>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/electric-plug_green.svg">BEEE</a></td></tr>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/code_green.svg">C LAB</a></td></tr>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/cash_green.svg">Economics</a></td></tr>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/globe_green.svg">IOT</a></td></tr>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/robot_green.svg">Design thinking</a></td></tr>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/archery_green.svg">Employability skills</a></td></tr>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/volcano_green.svg">Environmental science</a></td></tr>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/megaphone_green.svg">ACSE</a></td></tr>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/server_yellow.svg">Labs</a></td></tr>
+				<tr><td class="cell-title"><a href="#">Infernius Aurex</a></td></tr>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/archive_purple.svg">Archive</a></td></tr>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/calendar-month_blue.svg">University Docs</a></td></tr>
+				<tr><td class="cell-title"><a href="#"><img class="icon" src="https://www.notion.so/icons/add_lightgray.svg">Other</a></td></tr>
+			</tbody>
+		</table>
 
 	</div>
 
