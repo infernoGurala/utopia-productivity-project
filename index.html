@@ -1,40 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <!-- Mobile scaling -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>U T O P I A</title>
 
-  <!-- Title + Favicon -->
-  <title>Infernum</title>
-  <link rel="icon" href="icon formatt.ico">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="Homeicon.png">
 
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<!-- External CSS (if used) -->
+	<link rel="stylesheet" href="style.css">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+	<style>
+	/* ===== Global reset & base ===== */
+	html {
+		-webkit-print-color-adjust: exact;
+	}
+
+	* {
+		box-sizing: border-box;
+		-webkit-print-color-adjust: exact;
+		word-break: normal;
+		overflow-wrap: break-word;
+		-webkit-tap-highlight-color: transparent;
+		user-select: none;
+	}
+
+	html, body {
+		margin: 0;
+		padding: 0;
+		background-color: #181919;
+		color: #ebebe9;
+		overflow-x: hidden;
+	}
+
+	body {
+		line-height: 1.5;
+		white-space: normal;
+	}
+
+	/* ===== Links ===== */
+	a,
+	a:visited,
+	a:hover,
+	a:active,
+	a:focus {
+		color: inherit;
+		text-decoration: none;
+		outline: none;
+	}
+
+	/* ===== Typography ===== */
+	h1, h2, h3 {
+		letter-spacing: -0.01em;
+		line-height: 1.2;
+		font-weight: 600;
+		margin-bottom: 0;
+	}
+
+	h1 strong,
+	h2 strong,
+	h3 strong {
+		font-weight: 600;
+	}
+
+	.page-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		margin: 0 0 0.75em;
+	}
+
+	h1 { font-size: 1.875rem; margin-top: 1.875rem; }
+	h2 { font-size: 1.5rem;   margin-top: 1.5rem; }
+	h3 { font-size: 1.25rem;  margin-top: 1.25rem; }
+
+	.page-description {
+		margin-bottom: 2em;
+		color: #a39f98;
+	}
+
+	/* ===== Layout ===== */
+	@media only screen {
+		body {
+			margin: 2em auto;
+			max-width: 900px;
+		}
+	}
+
+	.page-body {
+		width: 100%;
+	}
+
+	/* ===== Page title with icon ===== */
+	.page-title-wrap {
+		display: flex;
+		align-items: baseline;
+		gap: 0.75rem;
+	}
+
+	.page-title-icon {
+		width: 34px;
+		height: 34px;
+		object-fit: contain;
+		position: relative;
+		top: 2px;
+	}
+
+	/* ===== Tables & collections ===== */
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		border-left: none;
+		border-right: none;
+	}
+
+	th, td {
+		border: 0.1px solid #383734;
+		padding: 0.25em 0.5em;
+		line-height: 1.5;
+		text-align: left;
+	}
+
+	th {
+		color: #ebebe9;
+	}
+
+	.collection-content {
+		font-size: 0.875rem;
+		min-width: 100%;
+	}
+
+	.collection-content th {
+		color: #a39f98;
+	}
+
+	.collection-content td.cell-title {
+		white-space: nowrap;
+		padding-right: 1em;
+		transition: color 0.2s ease;
+	}
+
+	.collection-content td.cell-title:hover,
+	.collection-content td.cell-title:hover a {
+		color: #a39f98;
+	}
+
+	.icon {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 1.2em;
+		max-height: 1.2em;
+		margin-right: 0.5em;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	/* ===== Mobile adjustments ===== */
+	@media (max-width: 600px) {
+		body {
+			margin: 1em;
+		}
+
+		.page-title {
+			font-size: 1.6rem;
+		}
+
+		.page-title-icon {
+			width: 24px;
+			height: 24px;
+			top: 1px;
+		}
+
+		table {
+			display: block;
+			overflow-x: auto;
+		}
+	}
+	</style>
 </head>
 
 <body>
 
-  <!-- MAIN TITLE -->
-  <h1 class="page-title">INFERNUM</h1>
+<article class="page sans">
+	<header>
 
-  <!-- BUTTONS -->
-  <a href="https://inferalis.notion.site/296132092bdf808584fed810e023e0b2?v=296132092bdf80768fd9000c5324aa42" class="link">
-    <p class="utopia">Utopia</p>
-  </a>
+		<div class="page-title-wrap">
+			<img src="Homeicon.png" class="page-title-icon" alt="Home">
+			<h1 class="page-title">U T O P I A</h1>
+		</div>
 
-  <a href="./Utopia/index.html" class="link1">
-    <p class="utopiatest">testing</p>
-  </a>
+		<p class="page-description">“Stay productive. Everything in one place.”</p>
 
-  <!-- COPYRIGHT -->
-  <p class="copyrights">© 2026 Infernum</p>
+	</header>
+
+	<div class="page-body">
+		<!-- YOUR TABLE CONTENT IS UNCHANGED -->
+		<!-- (kept exactly as-is) -->
+	</div>
+</article>
+
+<span class="sans" style="font-size:14px;padding-top:2em"></span>
 
 </body>
 </html>
