@@ -1,64 +1,28 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 80px;
-  background: #111;
-  color: white;
+button {
+ border: none;
+ border-radius: 20px;
+ background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+ transition: all 1.5s ease;
+ font-family: 'Ropa Sans', sans-serif;
+ font-weight: bold;
+ letter-spacing: 0.05rem;
+ padding: 0;
 }
 
-/* BUTTON BASE */
-.btn {
-  border: none;
-  border-radius: 20px;
-  background: linear-gradient(
-    32deg,
-    #03a9f4,
-    #f441a5,
-    #ffeb3b,
-    #03a9f4
-  );
-  background-size: 400%;
-  animation: gradient 8s linear infinite;
-  padding: 0;
-  cursor: pointer;
-  margin: 18px;
+button span {
+ display: inline-block;
+ padding: 15px 35px;
+ font-size: 17px;
+ border-radius: 20px;
+ background: #ffffff10;
+ backdrop-filter: blur(20px);
+ transition: 0.4s ease-in-out;
+ transition-property: color;
+ height: 100%;
+ width: 100%;
 }
 
-/* GLASS LAYER */
-.btn span {
-  display: inline-block;
-  padding: 15px 35px;
-  font-size: 17px;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
-  border-radius: 20px;
-  background: #ffffff10;
-  backdrop-filter: blur(20px);
-  color: white;
-  transition: backdrop-filter 0.4s ease, color 0.4s ease;
-}
-
-/* HOVER EFFECT (KEY FIX) */
-.btn span:hover {
-  backdrop-filter: blur(0px);
-  color: #ffffff;
-}
-
-/* LINK RESET */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* GRADIENT ANIMATION */
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+button span:hover {
+ backdrop-filter: blur(0px);
+ color: #ffffff;
 }
