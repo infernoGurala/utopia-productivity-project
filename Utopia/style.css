@@ -1,3 +1,53 @@
+/* ===============================
+   GLOBAL RESET
+================================ */
+
+html {
+	-webkit-print-color-adjust: exact;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+	word-break: normal;
+	overflow-wrap: break-word;
+	-webkit-tap-highlight-color: transparent;
+	user-select: none;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #181919;
+	color: #ebebe9;
+	overflow-x: hidden;
+}
+
+body {
+	line-height: 1.5;
+	white-space: normal;
+	max-width: 900px;
+	margin: 2em auto;
+}
+
+/* ===============================
+   LINKS
+================================ */
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+	color: inherit;
+	text-decoration: none;
+	outline: none;
+}
+
+/* ===============================
+   HEADER / TITLE
+================================ */
+
 .page-title-wrap {
 	display: flex;
 	align-items: baseline;
@@ -6,6 +56,8 @@
 
 .page-title {
 	margin: 0;
+	font-size: 2.5rem;
+	font-weight: 700;
 	line-height: 1;
 }
 
@@ -17,28 +69,47 @@
 	top: 2px;
 }
 
-@media (max-width: 600px) {
-
-	.page-title-wrap {
-		align-items: center;
-	}
-
-	.page-title {
-		font-size: 1.6rem;
-		letter-spacing: 0.15em;
-		text-align: center;
-	}
-
-	.page-title-icon {
-		width: 22px;
-		height: 22px;
-		top: 0;
-	}
+.page-description {
+	margin-bottom: 2em;
+	color: #a39f98;
 }
+
+/* ===============================
+   PAGE BODY
+================================ */
+
+.page-body {
+	width: 100%;
+	max-width: 100%;
+}
+
+/* ===============================
+   TABLE / NOTION DATABASE GRID
+================================ */
 
 .collection-content {
 	width: 100%;
-	table-layout: auto;
+	min-width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	font-size: 0.95rem;
+}
+
+.collection-content thead {
+	width: 100%;
+}
+
+.collection-content th {
+	color: #a39f98;
+	font-weight: 500;
+	border: 0.1px solid #383734;
+	padding: 0.6em 0.75em;
+}
+
+.collection-content td {
+	border: 0.1px solid #383734;
+	padding: 0.6em 0.75em;
+	width: 100%;
 }
 
 .collection-content td.cell-title {
@@ -46,11 +117,75 @@
 	width: 100%;
 }
 
+.collection-content td.cell-title a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5em;
+	width: 100%;
+}
+
+/* ===============================
+   NOTION DATABASE FONT (ONLY GRID)
+================================ */
+
 .collection-content,
-.collection-content a,
-.collection-content td {
+.collection-content *,
+.page.sans .collection-content,
+.page.sans .collection-content * {
 	font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
-	             "Segoe UI", Helvetica, Arial, sans-serif;
+	             "Segoe UI", Helvetica, Arial, sans-serif !important;
 	font-weight: 500;
 }
 
+/* ===============================
+   ICONS
+================================ */
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.2em;
+	height: 1.2em;
+	flex-shrink: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ===============================
+   MOBILE FIXES
+================================ */
+
+@media (max-width: 600px) {
+
+	body {
+		margin: 1em;
+		max-width: 100%;
+	}
+
+	.page-title-wrap {
+		align-items: center;
+	}
+
+	.page-title {
+		font-size: 1.6rem;
+		letter-spacing: 0.12em;
+	}
+
+	.page-title-icon {
+		width: 22px;
+		height: 22px;
+		top: 0;
+	}
+
+	.collection-content {
+		display: block;
+		overflow-x: auto;
+	}
+
+	.collection-content td.cell-title {
+		white-space: nowrap;
+	}
+}
