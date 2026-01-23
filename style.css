@@ -47,7 +47,6 @@ body {
 
 .utopiatest {
   --hover-shadows: 16px 16px 33px #121212, -16px -16px 33px #303030;
-  --accent: red;
   font-weight: lighter;
   letter-spacing: 0.1em;
   border: none;
@@ -59,7 +58,7 @@ body {
   background-color: #212121;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
-  color: white;
+  color: paleturquoise;
   padding: 1em 2em;
   transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
     letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
@@ -69,4 +68,3 @@ body {
 .utopiatest:hover {
   box-shadow: var(--hover-shadows);
 }
-
