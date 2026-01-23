@@ -117,3 +117,24 @@ body {
     text-align: center;
   }
 }
+
+
+
+/* ===== Purple text fix  ===== */
+
+a,
+a:visited,
+a:active,
+a:hover {
+	color: #ebebe9;
+	text-decoration: none;
+}
+
+/* ===== Disable text selection  ===== */
+
+* {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
