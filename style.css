@@ -29,10 +29,11 @@ body {
   color: white;
 }
 
-.btn:hover span {
+.btn span:hover {
   backdrop-filter: blur(0px);
   color: #ffffff;
 }
+
 
 a {
   text-decoration: none;
