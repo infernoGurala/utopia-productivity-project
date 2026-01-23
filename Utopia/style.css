@@ -1,140 +1,110 @@
-/* ===============================
-   GLOBAL BASE
-================================ */
-
-html, body {
-	margin: 0;
-	padding: 0;
-	background-color: #181919;
-	color: #ebebe9;
-	font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont,
-	             "Segoe UI", Helvetica, Arial, sans-serif;
+/* ===== RESET ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	max-width: 900px;
-	margin: 2em auto;
-	line-height: 1.5;
-	-webkit-tap-highlight-color: transparent;
-	user-select: none;
+  background: #181919;
+  color: #ebebe9;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-/* ===============================
-   LINKS (CLICK FIX)
-================================ */
-
-a,
-a * {
-	color: inherit;
-	text-decoration: none;
-	user-select: text;
-	pointer-events: auto;
+/* ===== PAGE ===== */
+.page {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
-/* ===============================
-   HEADER
-================================ */
-
-.page-title-wrap {
-	display: flex;
-	align-items: baseline;
-	gap: 0.75rem;
+/* ===== HEADER ===== */
+.header {
+  margin-bottom: 2rem;
 }
 
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin: 0;
-	line-height: 1;
+.title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-.page-title-icon {
-	width: 28px;
-	height: 28px;
-	object-fit: contain;
-	position: relative;
-	top: 2px;
+.title-icon {
+  width: 28px;
+  height: 28px;
 }
 
-.page-description {
-	margin: 1.5em 0 2em;
-	color: #a39f98;
+.title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
 }
 
-/* ===============================
-   TABLE (NOTION DATABASE)
-================================ */
-
-.collection-content {
-	width: 100%;
-	border-collapse: collapse;
-	table-layout: auto;
-	font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont,
-	             "Segoe UI", Helvetica, Arial, sans-serif;
-	font-size: 0.95rem;
+.subtitle {
+  margin-top: 0.75rem;
+  color: #a39f98;
 }
 
-.collection-content th,
-.collection-content td {
-	border: 0.5px solid #383734;
-	padding: 0.65em 0.75em;
+/* ===== DATABASE ===== */
+.database {
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
-.collection-content th {
-	color: #a39f98;
-	font-weight: 500;
+.db-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
 }
 
-.collection-content td.cell-title {
-	white-space: nowrap;
+.db-table th {
+  text-align: left;
+  font-size: 0.85rem;
+  color: #a39f98;
+  padding: 0.75rem;
+  border-bottom: 1px solid #2a2a2a;
 }
 
-.collection-content td.cell-title a {
-	display: flex;
-	align-items: center;
-	gap: 0.5em;
-	font-weight: 500;
+.arrow {
+  margin-right: 0.4rem;
+  opacity: 0.6;
 }
 
-/* ===============================
-   ICONS
-================================ */
-
-.icon {
-	width: 1.2em;
-	height: 1.2em;
-	flex-shrink: 0;
+.db-table td {
+  border-bottom: 1px solid #2a2a2a;
 }
 
-.icon img {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
+.db-table tr:last-child td {
+  border-bottom: none;
 }
 
-/* ===============================
-   MOBILE
-================================ */
+/* ===== ROW LINKS ===== */
+.db-table a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem;
+  color: #ebebe9;
+  text-decoration: none;
+  font-weight: 500;
+}
 
+.db-table a:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+/* ===== ICONS ===== */
+.db-table img {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* ===== MOBILE ===== */
 @media (max-width: 600px) {
-	body {
-		margin: 1em;
-		max-width: 100%;
-	}
-
-	.page-title {
-		font-size: 1.6rem;
-		letter-spacing: 0.12em;
-	}
-
-	.page-title-icon {
-		width: 22px;
-		height: 22px;
-		top: 0;
-	}
-
-	.collection-content {
-		display: block;
-		overflow-x: auto;
-	}
+  .title {
+    font-size: 1.6rem;
+    letter-spacing: 0.12em;
+  }
 }
